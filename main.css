@@ -1,0 +1,98 @@
+body {
+	background-color: #000044;
+}
+
+.list-background {
+	background-color: #C0C0C0;
+	min-height: 600px;
+	width: 500px;
+	margin: 0 auto;
+	border: 2px solid white;
+}
+
+h1 {
+	text-align: center;
+	display: inline-block;
+	color: #003366;
+	padding-top: 20px;
+	font-size: 3em;
+	font-style: italic;
+	font-family: Verdana, Helvetica;
+	margin-top: 0;
+	margin-left: 5px;
+}
+
+#icon {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	margin-left: 30px;
+	margin-bottom: 25px;
+	vertical-align: middle;
+}
+
+form {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 25px;
+}
+
+input {
+	height: 30px;
+	width: 250px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+button {
+	border: 2px solid black;
+	background-color: #003366;
+	display: inline-block;
+	color: white;
+	height: 30px;
+	width: 100px;
+	box-shadow: 2px 2px black;
+	border-radius: 10px;
+}
+
+button:hover {
+	box-shadow: none;
+}
+
+.list {
+	width: 480px;
+	height: 30px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid #000044;
+}
+
+.check {
+	height: 25px;
+	width: 25px;
+}
+
+.checkmark, .x {
+	height: 26px;
+	width: 26px;
+	margin: 2px;
+}
+
+.checkmark {
+	float: left;
+}
+
+.x {
+	float: right;
+}
+
+p {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold;
+	vertical-align: baseline;
+	position: relative;
+	margin: 0 15px;
+}
