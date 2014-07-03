@@ -5,8 +5,8 @@ $(document).ready(function() {
      });
 
      $('.list-background').on('click', '.list', function() {
-     	$(this).append('<div class="checkmark"></div>');
-      	$('.checkmark').last().append('<img class="check" src="../shoppingList/checkmark.png">');
+     	$(this).append('<div class="checkmark"><img class="check" src="../shoppingList/checkmark.png"></div>');
+      	
     });
       
 });
