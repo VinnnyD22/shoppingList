@@ -1,12 +1,13 @@
 $(document).ready(function() {
-	$('button').click(function () {
-      	$('.list-background').append('<div class="list"></div>');
-    	$('.list').last().append('<img class="x" src="../shoppingList/X.png">');
+	var txtbox = $(document).getElementById('item');
+	var txtval = txbox.val();
+
+	$('.list-background').on('click', 'button', function () {
+      	$('.list-background').append('<div class="list"><img class="x" src="X.png"></div>');
      });
 
      $('.list-background').on('click', '.list', function() {
-     	$(this).append('<div class="checkmark"><img class="check" src="../shoppingList/checkmark.png"></div>');
-      	
+     	$(this).append('<div class="checkmark"><img class="check" src="checkmark.png"></div>');
     });
       
 });
