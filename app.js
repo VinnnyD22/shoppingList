@@ -1,15 +1,27 @@
 $(document).ready(function() {
-	alert('pages are linked');
-	var txtbox = $(document).getElementById('item');
-	var txtval = txtbox.val;
+	var txtbox = document.getElementById('item');
+	var txtval = txtbox.value;
 
-	$('button').click(function () {
-		alert('button works');
-		$('.list-background').append('<div class="list"><img class="x" src="X.png"></div>')
+	//Add Item to List
+	$('#item').keyup(function(event) {
+		if (event.keycode == 13) {
+			event.preventDefault();
+			$('button').click();
+		};
 	});
 
+	$('button').click(function () {
+		$('.list-background').append('<div class="list"><div class="checkmark"><img class="check" src="checkmark.png"></div><span>' + txtval + '</span><img class="x" src="X.png"></div>');
+	});
+
+	//Add Checkmark to listed item
      $('.list-background').on('click', '.list', function() {
-     	$(this).append('<div class="checkmark"><img class="check" src="checkmark.png"></div>');
-    });
+     	$(this).find('.check').toggle();
+   	});
+
+     //Remove Item when X is clicked
+     $('.list').on('click', '.x', function() {
+     	alert('click worked');
+     });
       
 });

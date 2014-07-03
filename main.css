@@ -70,6 +70,7 @@ button:hover {
 }
 
 .check {
+	display: none;
 	height: 25px;
 	width: 25px;
 }
