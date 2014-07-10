@@ -23,11 +23,9 @@ $(document).ready(function() {
 
      //Remove Item when X is clicked
      $('#list').on('click', '.x-box', function() {
-     	//alert('click works');
      	$(this).closest('li').addClass('cancel');
      });
 
      //make List sortable
-    // $('#list').sortable({ axis: "y" });
      $('#list').sortable({axis: "y"});
 });
